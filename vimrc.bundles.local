@@ -1,3 +1,7 @@
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
-
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'markvincze/panda-vim'
+Plug 'nfvs/vim-perforce'

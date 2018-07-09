@@ -1,4 +1,11 @@
+filetype plugin indent on
+color panda
 set colorcolumn=
+set clipboard=unnamed
+set number relativenumber
+set ignorecase
+set smartcase
+set autochdir
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
@@ -18,3 +25,16 @@ nnoremap <leader>sd :VtrSendKeysRaw ^D<cr>
 nnoremap <leader>sl :VtrSendKeysRaw ^L<cr>
 nnoremap <leader>sc :VtrSendKeysRaw ^C<cr>
 nnoremap <leader>vs :VtrSendCommandToRunner<space>
+nnoremap <leader>ss :VtrSendLinesToRunner<cr>
+
+" leader mapping
+map <Leader>i mmgg=G`m
+map <Leader>p :set paste<CR><esc>"*]p:set nopaste<cr>
+
+let g:airline_theme='papercolor'
+
+" for .hql files
+au BufNewFile,BufRead *.hql set filetype=hive expandtab
+"
+" " for .q files
+au BufNewFile,BufRead *.q set filetype=hive expandtab
