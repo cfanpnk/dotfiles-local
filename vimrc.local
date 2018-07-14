@@ -1,5 +1,6 @@
 filetype plugin indent on
 color panda
+set textwidth=120
 set colorcolumn=
 set clipboard=unnamed
 set number relativenumber
@@ -7,6 +8,7 @@ set ignorecase
 set smartcase
 set autochdir
 set guifont=Monaco:h16
+set hlsearch
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
@@ -28,9 +30,11 @@ nnoremap <leader>sc :VtrSendKeysRaw ^C<cr>
 nnoremap <leader>vs :VtrSendCommandToRunner<space>
 nnoremap <leader>ss :VtrSendLinesToRunner<cr>
 
+nnoremap <leader>p :Files<CR>
+nnoremap <leader>h :set hlsearch!<CR>
+
 " leader mapping
-map <Leader>i mmgg=G`m
-map <Leader>p :set paste<CR><esc>"*]p:set nopaste<cr>
+nnoremap <leader>i mmgg=G`m
 
 let g:airline_theme='papercolor'
 
