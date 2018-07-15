@@ -12,4 +12,8 @@ Plug 'airblade/vim-rooter'
 Plug 'autowitch/hive.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tyrannicaltoucan/vim-quantum'
+Plug 'hzchirs/vim-material'
+Plug 'kaicataldo/material.vim'
+Plug 'jdkanani/vim-material-theme'
+Plug 'miyakogi/conoline.vim'
 
