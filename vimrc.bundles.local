@@ -11,4 +11,5 @@ Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'autowitch/hive.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'tyrannicaltoucan/vim-quantum'
 
