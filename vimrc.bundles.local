@@ -16,4 +16,6 @@ Plug 'hzchirs/vim-material'
 Plug 'kaicataldo/material.vim'
 Plug 'jdkanani/vim-material-theme'
 Plug 'miyakogi/conoline.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'airblade/vim-gitgutter'
 
