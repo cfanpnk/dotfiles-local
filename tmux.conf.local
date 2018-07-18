@@ -97,4 +97,4 @@ set -g pane-border-fg colour238
 set -g pane-active-border-bg colour236
 set -g pane-active-border-fg colour51
 
-source-file "/User/npan/.tmux-themepack/powerline/block/cyan.tmuxtheme"
+source-file "/Users/npan/.tmux-themepack/powerline/block/cyan.tmuxtheme"
