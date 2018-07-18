@@ -15,6 +15,7 @@ export QDS_ACCOUNT=itdevelopment
 # Environment variables set up
 # export PATH=~/Library/Python/3.6/bin:$PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
 export P4HOME="/Users/npan/Perforce/nankais-mbp-2/"
 eval "$(rbenv init -)"
 
