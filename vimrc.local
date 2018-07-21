@@ -42,6 +42,8 @@ nnoremap <leader>h :set hlsearch!<CR>
 nnoremap <leader>i mmgg=G`m
 
 let g:airline_theme='material'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " for .hql files
 au BufNewFile,BufRead *.hql set filetype=hive expandtab
@@ -63,3 +65,4 @@ if has("mac") || has("gui_macvim") || has("gui_mac")
   " directory name (/something/src)
   nnoremap <leader>ch :let @*=expand("%:p:h")<CR>
 endif
+
