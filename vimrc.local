@@ -45,9 +45,16 @@ let g:airline_theme='material'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" CUSTOM AUTOCMDS
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Jump to last cursor position unless it's invalid or in an event handler
+au BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
 " for .hql files
 au BufNewFile,BufRead *.hql set filetype=hive expandtab
-"
 " " for .q files
 au BufNewFile,BufRead *.q set filetype=hive expandtab
 
@@ -66,3 +73,7 @@ if has("mac") || has("gui_macvim") || has("gui_mac")
   nnoremap <leader>ch :let @*=expand("%:p:h")<CR>
 endif
 
+" Edit or view files in same directory as current file
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>e :edit %%
+map <leader>v :view %%
