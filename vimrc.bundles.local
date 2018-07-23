@@ -18,4 +18,5 @@ Plug 'jdkanani/vim-material-theme'
 Plug 'miyakogi/conoline.vim'
 Plug 'derekwyatt/vim-scala'
 Plug 'airblade/vim-gitgutter'
+Plug 'christoomey/vim-system-copy'
 
