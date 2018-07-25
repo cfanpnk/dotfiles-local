@@ -12,7 +12,7 @@ set smartcase
 " set autochdir
 set guifont=Monaco:h16
 set hlsearch
-hi Search cterm=NONE ctermfg=None ctermbg=DarkGray
+" hi Search cterm=NONE ctermfg=None ctermbg=DarkGray
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
