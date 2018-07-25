@@ -93,10 +93,10 @@ shift + alt - w : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-windo
 shift + alt - d : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge east
 
 # decrease region size
-shift + cmd - a : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge west
-shift + cmd - s : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge south
-shift + cmd - w : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge north
-shift + cmd - d : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge east
+ctrl + alt + cmd - a : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge west
+ctrl + alt + cmd - s : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge south
+ctrl + alt + cmd - w : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge north
+ctrl + alt + cmd - d : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge east
 
 # set insertion point for focused container
 ctrl + alt - f : chunkc tiling::window --use-insertion-point cancel
@@ -118,10 +118,10 @@ alt - x : chunkc tiling::desktop --mirror horizontal
 alt - a : chunkc tiling::desktop --toggle offset
 
 # toggle window fullscreen
-alt - f : chunkc tiling::window --toggle fullscreen
+ctrl + alt + cmd - f : chunkc tiling::window --toggle fullscreen
 
 # toggle window native fullscreen
-shift + alt - f : chunkc tiling::window --toggle native-fullscreen
+ctrl + shift - f : chunkc tiling::window --toggle native-fullscreen
 
 # toggle window parent zoom
 alt - d : chunkc tiling::window --toggle parent
@@ -141,9 +141,9 @@ alt - s : chunkc tiling::window --toggle sticky;\
 shift + alt - t : chunkc set window_float_next 1
 
 # change layout of desktop
-ctrl + alt - a : chunkc tiling::desktop --layout bsp
-ctrl + alt - s : chunkc tiling::desktop --layout monocle
-ctrl + alt - d : chunkc tiling::desktop --layout float
+ctrl + alt + cmd - b : chunkc tiling::desktop --layout bsp
+ctrl + alt + cmd - m : chunkc tiling::desktop --layout monocle
+ctrl + alt + cmd - f : chunkc tiling::desktop --layout float
 
 ctrl + alt - w : chunkc tiling::desktop --deserialize ~/.chunkwm_layouts/dev_1
 
