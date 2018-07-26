@@ -34,7 +34,7 @@ ctrl + alt + cmd - k : chunkc tiling::window --warp north
 ctrl + alt + cmd - l : chunkc tiling::window --warp east
 
 # make floating window fill screen
-ctrl + alt + cmd - m  : chunkc tiling::window --grid-layout 1:1:0:0:1:1
+ctrl + alt + cmd - up  : chunkc tiling::window --grid-layout 1:1:0:0:1:1
 
 # make floating window fill left-half of screen
 ctrl + alt + cmd - left : chunkc tiling::window --grid-layout 1:2:0:0:1:1
