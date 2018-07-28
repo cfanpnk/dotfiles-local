@@ -73,3 +73,4 @@ source $ZSH/oh-my-zsh.sh
 ZSH_THEME="powerlevel9k/powerlevel9k"
 DEFAULT_USER=npan
 bindkey -v
+DISABLE_AUTO_TITLE="true"
