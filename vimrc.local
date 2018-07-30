@@ -41,8 +41,6 @@ nnoremap <leader>h :set hlsearch!<CR>
 nnoremap <leader>i mmgg=G`m
 
 let g:airline_theme='material'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
