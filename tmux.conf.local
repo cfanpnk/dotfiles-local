@@ -42,7 +42,6 @@ bind b break-pane -d
 bind C-b send-keys 'tat && exit' 'C-m'
 bind-key ! run-shell '(tmux switch-client -l || tmux switch-client -n) && tmux kill-session -t "#S" || tmux kill-session'
 bind-key J command-prompt -p "join pane from: "  "join-pane -h -s '%%'"
-
 bind c new-window -c "#{pane_current_path}"
 bind C-d split-window -h -c ~/code/dotfiles/ "reattach-to-user-namespace vim +Files"
 bind g split-window -c "#{pane_current_path}" -h -p 50 'gitsh'
@@ -101,3 +100,8 @@ set -g pane-active-border-fg colour51
 # set allow-rename off
 
 source-file "/Users/npan/.tmux-themepack/powerline/block/cyan.tmuxtheme"
+
+#set inactive/active window styles
+set -g window-style 'fg=colour247,bg=colour240'
+set -g window-active-style 'fg=colour250,bg=black'
+
