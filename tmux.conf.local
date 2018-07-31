@@ -102,6 +102,6 @@ set -g pane-active-border-fg colour51
 source-file "/Users/npan/.tmux-themepack/powerline/block/cyan.tmuxtheme"
 
 #set inactive/active window styles
-set -g window-style 'fg=colour247,bg=colour240'
-set -g window-active-style 'fg=colour250,bg=black'
+set -g window-style 'bg=colour240'
+set -g window-active-style 'bg=black'
 
