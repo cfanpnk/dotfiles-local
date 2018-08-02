@@ -1,4 +1,5 @@
-export JAVA_HOME=$(/usr/libexec/java_home -v 10.0.2)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export AIRFLOW_HOME=~/airflow
 
 # Environment variables set up for EDL tools
 export EDL_S3_CODE_BUCKET=ni-edlcode-dev
