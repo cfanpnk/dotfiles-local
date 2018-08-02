@@ -34,7 +34,8 @@ nnoremap <leader>sc :VtrSendKeysRaw ^C<cr>
 nnoremap <leader>vs :VtrSendCommandToRunner<space>
 nnoremap <leader>ss :VtrSendLinesToRunner<cr>
 
-nnoremap <leader>p :Files<CR>
+nnoremap <leader>p :GFiles<CR>
+nnoremap <C-p> :Files<CR>
 nnoremap <leader>h :set hlsearch!<CR>
 
 " leader mapping
