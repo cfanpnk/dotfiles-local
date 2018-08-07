@@ -102,6 +102,5 @@ source-file "/Users/npan/.tmux-themepack/powerline/block/cyan.tmuxtheme"
 set -g window-style 'bg=colour240'
 set -g window-active-style 'bg=black'
 
-set-option -g status-right ""
-
+# set-option -g status-right " #(battery -t)  #(date '+%a, %b %d - %I:%M') "
 run-shell /Users/npan/.tmux/plugins/tmux-resurrect/resurrect.tmux
