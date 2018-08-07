@@ -1,7 +1,7 @@
 # Ctrl-s prefix key. Default => C-b. Send C-s with repeat option via C-s C-s
-unbind-key C-b
-set -g prefix `
-bind -r ` send-prefix
+# unbind-key C-b
+# set -g prefix `
+# bind -r ` send-prefix
 
 set -g default-command "reattach-to-user-namespace -l zsh"
 set-window-option -g status-position top
@@ -96,9 +96,6 @@ set -g pane-border-fg colour238
 set -g pane-active-border-bg colour236
 set -g pane-active-border-fg colour51
 
-#disable title auto rename
-# set allow-rename off
-
 source-file "/Users/npan/.tmux-themepack/powerline/block/cyan.tmuxtheme"
 
 #set inactive/active window styles
@@ -106,3 +103,5 @@ set -g window-style 'bg=colour240'
 set -g window-active-style 'bg=black'
 
 set-option -g status-right ""
+
+run-shell /Users/npan/.tmux/plugins/tmux-resurrect/resurrect.tmux
