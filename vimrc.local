@@ -39,6 +39,7 @@ nnoremap <leader>h :set hlsearch!<CR>
 
 " leader mapping
 nnoremap <leader>i mmgg=G`m
+nnoremap <leader>y :set paste!<CR>
 
 let g:airline_theme='material'
 
