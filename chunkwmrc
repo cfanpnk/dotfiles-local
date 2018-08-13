@@ -131,14 +131,11 @@ chunkc core::load tiling.so
 #
 # NOTE: sample rules for the tiling plugin
 #
-
-chunkc tiling::rule --owner Finder --name Copy --state float &
-chunkc tiling::rule --owner \"App Store\" --state float &
-chunkc tiling::rule --owner Emacs --except "^$" --state tile &
 chunkc tiling::rule --owner WeChat --state float &
 chunkc tiling::rule --owner Messages --state float &
 chunkc tiling::rule --owner Slack --state float &
 chunkc tiling::rule --owner \"Skype for Business\" --state float &
 chunkc tiling::rule --owner \"Microsoft Teams\" --state float &
+chunkc tiling::rule --owner Contacts --state float &
 
 chunkc tiling::desktop --toggle offset
