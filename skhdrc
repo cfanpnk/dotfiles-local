@@ -76,7 +76,7 @@
 # cmd + shift - return : ~/Scripts/qtb.sh
 
 # close focused window
-alt - w : chunkc tiling::window --close
+# alt - w : chunkc tiling::window --close
 
 # focus window
 alt - h : chunkc tiling::window --focus west
