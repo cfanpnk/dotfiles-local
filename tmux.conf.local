@@ -1,7 +1,7 @@
 # Ctrl-s prefix key. Default => C-b. Send C-s with repeat option via C-s C-s
 unbind-key C-b
-set -g prefix C-Space 
-bind -r C-space send-prefix
+set -g prefix C-a
+bind -r C-a send-prefix
 
 set -g default-command "reattach-to-user-namespace -l zsh"
 set-window-option -g status-position top
