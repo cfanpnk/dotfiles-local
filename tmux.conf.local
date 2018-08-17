@@ -60,8 +60,8 @@ bind C-j choose-tree -s
 bind-key Space switch-client -l
 
 # more intuitive keybindings for splitting
-bind \ split-window -h -c "#{pane_current_path}"
-bind - split-window -v -c "#{pane_current_path}"
+bind l split-window -h -c "#{pane_current_path}"
+bind j split-window -v -c "#{pane_current_path}"
 
 # Smart pane switching with awareness of vim splits
 # See this blog post for additional detail:
