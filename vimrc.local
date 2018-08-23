@@ -3,7 +3,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 filetype plugin indent on
 set background=dark
 set termguicolors
-color panda
+color gruvbox
 set textwidth=120
 set colorcolumn=
 set number relativenumber
@@ -41,7 +41,7 @@ nnoremap <leader>h :set hlsearch!<CR>
 nnoremap <leader>i mmgg=G`m
 nnoremap <leader>y :set paste!<CR>
 
-let g:airline_theme='material'
+let g:airline_theme='gruvbox'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
