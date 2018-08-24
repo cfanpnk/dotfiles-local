@@ -19,4 +19,5 @@ Plug 'dansomething/vim-eclim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-unimpaired'
+Plug 'machakann/vim-highlightedyank'
 
