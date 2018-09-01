@@ -13,10 +13,9 @@ set colorcolumn=
 set number relativenumber
 set ignorecase
 set smartcase
-" set autochdir
 set guifont=Monaco:h16
 set hlsearch
-" hi Search cterm=NONE ctermfg=None ctermbg=DarkGray
+set clipboard=unnamed
 
 " Eazy access to the start of the line
 nmap 0 ^
