@@ -48,6 +48,7 @@ nmap <leader>h :set hlsearch!<CR>
 " leader mapping
 nmap <leader>so :source $MYVIMRC<cr>
 nmap <leader>vi :tabe ~/.vimrc<cr>
+nmap <leader>gr "*gr
 imap <leader>jk <esc>
 imap <leader>kj <esc>
 
