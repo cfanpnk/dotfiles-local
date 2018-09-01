@@ -18,4 +18,5 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-unimpaired'
 Plug 'machakann/vim-highlightedyank'
 Plug 'tommcdo/vim-exchange'
+Plug 'vim-scripts/ReplaceWithRegister'
 
