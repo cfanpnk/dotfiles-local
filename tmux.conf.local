@@ -9,7 +9,7 @@ set-window-option -g status-position top
 set -g base-index 1
 set -g renumber-windows on
 
-set -g display-panes-time 350
+set -g display-panes-time 1350
 
 # improve colors
 set -g default-terminal 'screen-256color'
@@ -51,7 +51,7 @@ bind C-j split-window -v "tmux list-sessions | sed -E 's/:.*$//' | grep -v \"^$(
 
 # Quick session switching back and forth. I never use the built in layouts
 # (default mapping for Space), so I reclaimed the key for this
-bind-key Space switch-client -l
+bind Space switch-client -l
 
 # more intuitive keybindings for splitting
 bind l split-window -h -c "#{pane_current_path}"
