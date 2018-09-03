@@ -17,6 +17,8 @@ set guifont=Monaco:h16
 set hlsearch
 set clipboard=unnamed
 
+let test#strategy = "vtr"
+
 " Eazy access to the start of the line
 nmap 0 ^
 
