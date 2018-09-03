@@ -45,6 +45,8 @@ bind j command-prompt -p "join pane from: "  "join-pane -h -s '%%'"
 bind c new-window -c "#{pane_current_path}"
 bind g split-window -c "#{pane_current_path}" -h -p 50 'gitsh'
 bind r split-window -h -c ~/ "rcup"
+# Easily swap a pane (targeted by pane number) with the current pane
+bind-key s display-panes\; command-prompt -p "pane #: "  "swap-pane -t '%%'"
 
 # Display a selectable list of sessions
 bind p split-window -v "tmux list-sessions | sed -E 's/:.*$//' | grep -v \"^$(tmux display-message -p '#S')\$\" | fzf --reverse | xargs tmux switch-client -t"
@@ -72,7 +74,7 @@ bind -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
 bind C-l send-keys 'C-l'
 
 # Source tmux.conf
-bind s source-file ~/.tmux.conf \; display "Sourced ~/.tmux.conf"
+bind o source-file ~/.tmux.conf \; display "Sourced ~/.tmux.conf"
 
 # bind resizing of panes to H,J,K,L (resizes by steps of 10 lines/columns)
 bind -n S-Left resize-pane -L 2
