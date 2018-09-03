@@ -50,8 +50,6 @@ nmap <leader>h :set hlsearch!<CR>
 nmap <leader>so :source $MYVIMRC<cr>
 nmap <leader>vi :tabe ~/.vimrc<cr>
 nmap <leader>gr "*gr
-imap <leader>jk <esc>
-imap <leader>kj <esc>
 
 " Command aliases for typoed commands (accidentally holding shift too long)
 command! Q q
