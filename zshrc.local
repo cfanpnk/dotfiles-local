@@ -68,6 +68,16 @@ zle-keymap-select () {
 
 zle -N zle-keymap-select
 
+_not_inside_tmux() { [[ -z "$TMUX" ]] }
+
+ensure_tmux_is_running() {
+  if _not_inside_tmux; then
+    tat
+  fi
+}
+
+ensure_tmux_is_running
+
 # oh-my-zsh set up
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
