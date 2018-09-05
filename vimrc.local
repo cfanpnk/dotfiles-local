@@ -30,26 +30,26 @@ nmap k gk
 autocmd VimResized * :wincmd =
 
 " zoom a vim pane, <C-w>= to re-balance
-nmap <leader>- :wincmd _<cr>:wincmd \|<cr>
-nmap <leader>= :wincmd =<cr>
-nmap <leader>v- :VtrOpenRunner { "orientation": "v" }<cr>
-nmap <leader>v\ :VtrOpenRunner { "orientation": "h" }<cr>
-nmap <leader>vk :VtrKillRunner<cr>
-nmap <leader>va :VtrAttachToPane<cr>
-nmap <leader>fr :VtrFocusRunner<cr>
-nmap <leader>sq :VtrSendKeysRaw q<cr>
-nmap <leader>sd :VtrSendKeysRaw ^D<cr>
-nmap <leader>sl :VtrSendKeysRaw ^L<cr>
-nmap <leader>sc :VtrSendKeysRaw ^C<cr>
-nmap <leader>vs :VtrSendCommandToRunner<space>
-nmap <leader>ss :VtrSendLinesToRunner<cr>
-nmap <leader>p :Files<CR>
-nmap <leader>h :set hlsearch!<CR>
+map <leader>- :wincmd _<cr>:wincmd \|<cr>
+map <leader>= :wincmd =<cr>
+map <leader>v- :VtrOpenRunner { "orientation": "v" }<cr>
+map <leader>v\ :VtrOpenRunner { "orientation": "h" }<cr>
+map <leader>vk :VtrKillRunner<cr>
+map <leader>va :VtrAttachToPane<cr>
+map <leader>fr :VtrFocusRunner<cr>
+map <leader>sq :VtrSendKeysRaw q<cr>
+map <leader>sd :VtrSendKeysRaw ^D<cr>
+map <leader>sl :VtrSendKeysRaw ^L<cr>
+map <leader>sc :VtrSendKeysRaw ^C<cr>
+map <leader>vs :VtrSendCommandToRunner<space>
+map <leader>ss :VtrSendLinesToRunner<cr>
+map <leader>p :Files<CR>
+map <leader>h :set hlsearch!<CR>
 
 " leader mapping
-nmap <leader>so :source $MYVIMRC<cr>
-nmap <leader>vi :tabe ~/.vimrc<cr>
-nmap <leader>gr "*gr
+map <leader>so :source $MYVIMRC<cr>
+map <leader>vi :tabe ~/.vimrc<cr>
+map <leader>gr "*gr
 
 " Command aliases for typoed commands (accidentally holding shift too long)
 command! Q q
