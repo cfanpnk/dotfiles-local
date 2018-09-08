@@ -103,13 +103,13 @@ alt + cmd - k : chunkc tiling::window --warp north
 alt + cmd - l : chunkc tiling::window --warp east
 
 # make floating window fill screen
-shift + alt + ctrl - m     : chunkc tiling::window --grid-layout 1:1:0:0:1:1
+alt - m   : chunkc tiling::window --grid-layout 1:1:0:0:1:1
 
 # make floating window fill left-half of screen
-shift + alt + ctrl - h   : chunkc tiling::window --grid-layout 1:2:0:0:1:1
+alt - h   : chunkc tiling::window --grid-layout 1:2:0:0:1:1
 
 # make floating window fill right-half of screen
-shift + alt + ctrl - l  : chunkc tiling::window --grid-layout 1:2:1:0:1:1
+alt - l  : chunkc tiling::window --grid-layout 1:2:1:0:1:1
 
 # fast focus desktop
 alt - tab : chunkc tiling::desktop --focus $(chunkc get _last_active_desktop)
@@ -219,8 +219,8 @@ alt - s : chunkc tiling::window --toggle sticky;\
 shift + alt - t : chunkc set window_float_next 1
 
 # change layout of desktop
-ctrl + alt + shift + cmd - b : chunkc tiling::desktop --layout bsp
-ctrl + alt + shift + cmd - m : chunkc tiling::desktop --layout monocle
-ctrl + alt + shift + cmd - f : chunkc tiling::desktop --layout float
+ctrl + alt + shift - b : chunkc tiling::desktop --layout bsp
+ctrl + alt + shift - m : chunkc tiling::desktop --layout monocle
+ctrl + alt + shift - f : chunkc tiling::desktop --layout float
 
 ctrl + alt - w : chunkc tiling::desktop --deserialize ~/.chunkwm_layouts/dev_1
