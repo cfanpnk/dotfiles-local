@@ -122,6 +122,8 @@ alt - 4 : chunkc tiling::desktop --focus 4
 alt - 5 : chunkc tiling::desktop --focus 5
 alt - 6 : chunkc tiling::desktop --focus 6
 alt - 7 : chunkc tiling::desktop --focus 7
+alt - 8 : chunkc tiling::desktop --focus 8
+alt - 9 : chunkc tiling::desktop --focus 9
 
 # send window to desktop
 shift + alt - x : chunkc tiling::window --send-to-desktop $(chunkc get _last_active_desktop)
