@@ -49,11 +49,11 @@ chunkc set custom_bar_offset_left        20
 chunkc set custom_bar_offset_right       20
 
 chunkc set global_desktop_mode           bsp
-chunkc set global_desktop_offset_top     0
-chunkc set global_desktop_offset_bottom  0
-chunkc set global_desktop_offset_left    0
-chunkc set global_desktop_offset_right   0
-chunkc set global_desktop_offset_gap     0
+chunkc set global_desktop_offset_top     20
+chunkc set global_desktop_offset_bottom  20
+chunkc set global_desktop_offset_left    20
+chunkc set global_desktop_offset_right   20
+chunkc set global_desktop_offset_gap     15
 
 #
 # NOTE: syntax for desktop-specific settings
@@ -73,7 +73,7 @@ chunkc set 6_desktop_mode                bsp
 chunkc set desktop_padding_step_size     0.0
 chunkc set desktop_gap_step_size         0.0
 
-chunkc set bsp_spawn_left                0
+chunkc set bsp_spawn_left                1
 chunkc set bsp_optimal_ratio             1.618
 chunkc set bsp_split_mode                optimal
 chunkc set bsp_split_ratio               0.5
@@ -138,5 +138,6 @@ chunkc tiling::rule --owner \"Skype for Business\" --state float &
 chunkc tiling::rule --owner \"Microsoft Teams\" --state float &
 chunkc tiling::rule --owner Contacts --state float &
 chunkc tiling::rule --owner Spotify --state float &
+chunkc tiling::rule --owner \"App Store\" --state float &
 
 chunkc tiling::desktop --toggle offset
