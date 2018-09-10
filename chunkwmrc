@@ -41,12 +41,12 @@ chunkc core::hotload 0
 # NOTE: the following are config variables for the chunkwm-tiling plugin.
 #
 
-chunkc set custom_bar_enabled            0
-chunkc set custom_bar_all_monitors       1
-chunkc set custom_bar_offset_top         20
-chunkc set custom_bar_offset_bottom      20
-chunkc set custom_bar_offset_left        20
-chunkc set custom_bar_offset_right       20
+# chunkc set custom_bar_enabled            0
+# chunkc set custom_bar_all_monitors       1
+# chunkc set custom_bar_offset_top         20
+# chunkc set custom_bar_offset_bottom      20
+# chunkc set custom_bar_offset_left        20
+# chunkc set custom_bar_offset_right       20
 
 chunkc set global_desktop_mode           bsp
 chunkc set global_desktop_offset_top     20
@@ -58,6 +58,7 @@ chunkc set global_desktop_offset_gap     15
 #
 # NOTE: syntax for desktop-specific settings
 #
+chunkc set 1_desktop_mode                bsp
 chunkc set 2_desktop_mode                bsp
 chunkc set 3_desktop_mode                bsp
 chunkc set 4_desktop_mode                bsp
@@ -70,8 +71,8 @@ chunkc set 6_desktop_mode                bsp
 # chunkc set 3_desktop_offset_gap          30
 #
 
-chunkc set desktop_padding_step_size     0.0
-chunkc set desktop_gap_step_size         0.0
+chunkc set desktop_padding_step_size     10.0
+chunkc set desktop_gap_step_size         5.0
 
 chunkc set bsp_spawn_left                1
 chunkc set bsp_optimal_ratio             1.618
