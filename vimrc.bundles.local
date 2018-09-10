@@ -25,4 +25,5 @@ Plug 'kana/vim-textobj-entire'
 Plug 'lucapette/vim-textobj-underscore'
 Plug 'christoomey/vim-sort-motion'
 Plug 'yuttie/comfortable-motion.vim'
+Plug 'jiangmiao/auto-pairs'
 
