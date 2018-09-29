@@ -27,4 +27,5 @@ Plug 'christoomey/vim-sort-motion'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-vinegar'
 
