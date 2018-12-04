@@ -103,4 +103,3 @@ function! RenameFile()
 endfunction
 map <leader>r :call RenameFile()<cr>
 
-let $FZF_DEFAULT_COMMAND = 'ag --ignore trunk --ignore rel --ignore target -g ""'
