@@ -103,3 +103,9 @@ function! RenameFile()
 endfunction
 map <leader>r :call RenameFile()<cr>
 
+" ale settings
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
+" Only run linters named in ale_linters settings.
+let g:ale_linters_explicit = 1
