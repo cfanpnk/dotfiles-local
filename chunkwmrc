@@ -41,19 +41,19 @@ chunkc core::hotload 0
 # NOTE: the following are config variables for the chunkwm-tiling plugin.
 #
 
-# chunkc set custom_bar_enabled            0
-# chunkc set custom_bar_all_monitors       1
-# chunkc set custom_bar_offset_top         20
-# chunkc set custom_bar_offset_bottom      20
-# chunkc set custom_bar_offset_left        20
-# chunkc set custom_bar_offset_right       20
+chunkc set custom_bar_enabled            0
+chunkc set custom_bar_all_monitors       1
+chunkc set custom_bar_offset_top         20
+chunkc set custom_bar_offset_bottom      20
+chunkc set custom_bar_offset_left        20
+chunkc set custom_bar_offset_right       20
 
 chunkc set global_desktop_mode           bsp
-chunkc set global_desktop_offset_top     0
-chunkc set global_desktop_offset_bottom  0
-chunkc set global_desktop_offset_left    0
-chunkc set global_desktop_offset_right   0
-chunkc set global_desktop_offset_gap     0
+chunkc set global_desktop_offset_top     20
+chunkc set global_desktop_offset_bottom  20
+chunkc set global_desktop_offset_left    20
+chunkc set global_desktop_offset_right   20
+chunkc set global_desktop_offset_gap     15
 
 #
 # NOTE: syntax for desktop-specific settings
@@ -135,8 +135,6 @@ chunkc core::load tiling.so
 chunkc tiling::rule --owner WeChat --state float &
 chunkc tiling::rule --owner Messages --state float &
 chunkc tiling::rule --owner Slack --state float &
-chunkc tiling::rule --owner \"Skype for Business\" --state float &
-chunkc tiling::rule --owner \"Microsoft Teams\" --state float &
 chunkc tiling::rule --owner Contacts --state float &
 chunkc tiling::rule --owner Spotify --state float &
 chunkc tiling::rule --owner \"App Store\" --state float &
