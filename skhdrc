@@ -164,13 +164,17 @@ ctrl + cmd - 2  : chunkc tiling::window --send-to-monitor 2; chunkc tiling::moni
 ctrl + cmd - 3  : chunkc tiling::window --send-to-monitor 3; chunkc tiling::monitor -f 3
 
 # increase region size
-shift - left : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge west
+cmd - left : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge west
+# alt + cmd - left 
+# alt + cmd - j
+# alt + cmd - k
+# alt + cmd - l
 # shift - down : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge south
 # shift - up : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge north
 # shift - right : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge east
 
 # decrease region size
-shift - right : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge west
+cmd - right : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge west
 # shift + alt - up : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge south
 # shift + alt - down : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge north
 # shift + alt - left : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge east
