@@ -50,6 +50,7 @@ map <leader>h :set hlsearch!<CR>
 map <leader>so :source $MYVIMRC<cr>
 map <leader>vi :tabe ~/.vimrc<cr>
 map <leader>gr "*gr
+map <leader>n :NERDTreeToggle<CR>
 
 " Command aliases for typoed commands (accidentally holding shift too long)
 command! Q q
@@ -109,3 +110,6 @@ let g:ale_linters = {
 \}
 " Only run linters named in ale_linters settings.
 let g:ale_linters_explicit = 1
+
+" Disable auto format for golang on save
+let g:go_fmt_autosave = 0
