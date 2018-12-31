@@ -180,11 +180,11 @@ alt - right : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-e
 # shift + alt - left : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge east
 
 # set insertion point for focused container
-cmd + shift - f : chunkc tiling::window --use-insertion-point cancel
-cmd + shift - h : chunkc tiling::window --use-insertion-point west
-cmd + shift - j : chunkc tiling::window --use-insertion-point south
-cmd + shift - k : chunkc tiling::window --use-insertion-point north
-cmd + shift - l : chunkc tiling::window --use-insertion-point east
+alt + shift - f : chunkc tiling::window --use-insertion-point cancel
+alt + shift - h : chunkc tiling::window --use-insertion-point west
+alt + shift - j : chunkc tiling::window --use-insertion-point south
+alt + shift - k : chunkc tiling::window --use-insertion-point north
+alt + shift - l : chunkc tiling::window --use-insertion-point east
 
 # rotate tree
 alt - r : chunkc tiling::desktop --rotate 90
