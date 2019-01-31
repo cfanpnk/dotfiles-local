@@ -16,6 +16,7 @@ set smartcase
 set guifont=Monaco:h16
 set hlsearch
 set clipboard=unnamed
+set nofixendofline
 
 let test#strategy = "dispatch"
 
@@ -65,6 +66,17 @@ let g:airline_theme='gruvbox'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Avoid scrolling when switch buffers
+autocmd! BufWinLeave * let b:winview = winsaveview()
+autocmd! BufWinEnter * if exists('b:winview') | call winrestview(b:winview) | unlet b:winview
+
+" Jump to last cursor position unless it's invalid or in an event handler
+au BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
+au BufEnter * silent! normal! g`"
+
 " for .hql files
 au BufNewFile,BufRead *.hql set filetype=hive expandtab
 " " for .q files
