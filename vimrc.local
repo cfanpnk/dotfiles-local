@@ -23,10 +23,6 @@ let test#strategy = "dispatch"
 " Eazy access to the start of the line
 nmap 0 ^
 
-" Move up and down by visible lines if current line is wrapped
-nmap j gj
-nmap k gk
-
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
 
