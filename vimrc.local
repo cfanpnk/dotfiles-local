@@ -124,4 +124,4 @@ let g:ale_linters = {
 let g:ale_linters_explicit = 1
 
 " Disable auto format for golang on save
-let g:go_fmt_autosave = 0
+let g:go_fmt_autosave = 1
