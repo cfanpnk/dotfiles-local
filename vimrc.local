@@ -15,7 +15,6 @@ set ignorecase
 set smartcase
 set guifont=Monaco:h16
 set hlsearch
-set clipboard=unnamed
 set nofixendofline
 
 let test#strategy = "dispatch"
