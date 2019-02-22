@@ -17,8 +17,6 @@ set guifont=Monaco:h16
 set hlsearch
 set nofixendofline
 
-let test#strategy = "dispatch"
-
 " Eazy access to the start of the line
 nmap 0 ^
 
