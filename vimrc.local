@@ -45,6 +45,7 @@ map <leader>so :source $MYVIMRC<cr>
 map <leader>vi :tabe ~/.vimrc<cr>
 map <leader>gr "*gr
 map <leader>n :NERDTreeToggle<CR>
+map <leader>gd <C-]>
 
 " Command aliases for typoed commands (accidentally holding shift too long)
 command! Q q
