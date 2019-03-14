@@ -56,7 +56,7 @@ bind p split-window -v "tmux list-sessions | sed -E 's/:.*$//' | grep -v \"^$(tm
 bind Space switch-client -l
 
 # more intuitive keybindings for splitting
-bind \ split-window -hb -c "#{pane_current_path}"
+bind \ split-window -h -c "#{pane_current_path}"
 bind - split-window -v -c "#{pane_current_path}"
 
 # Smart pane switching with awareness of vim splits
@@ -77,14 +77,17 @@ bind C-l send-keys 'C-l'
 bind o source-file ~/.tmux.conf \; display "Sourced ~/.tmux.conf"
 
 # bind resizing of panes to H,J,K,L (resizes by steps of 10 lines/columns)
-bind -n S-Left resize-pane -L 2
-bind -n S-Right resize-pane -R 2
-bind -n S-Down resize-pane -D 1
-bind -n S-Up resize-pane -U 1
-bind -n C-Left resize-pane -L 10
-bind -n C-Right resize-pane -R 10
-bind -n C-Down resize-pane -D 5
-bind -n C-Up resize-pane -U 5
+bind S-Left resize-pane -L 3
+bind S-Right resize-pane -R 2
+bind S-Down resize-pane -D 1
+bind S-Up resize-pane -U 1
+bind C-Left resize-pane -L 10
+bind C-Right resize-pane -R 10
+bind C-Down resize-pane -D 5
+bind C-Up resize-pane -U 5
+
+# binding for switching to last session
+bind-key -n C-Tab switch-client -l
 
 #pane border
 set -g pane-border-bg colour235
@@ -96,12 +99,6 @@ set -g pane-active-border-fg colour51
 set -g @resurrect-save 'S'
 set -g @resurrect-restore 'R'
 
-source-file "/Users/npan/.tmux-themepack/powerline/block/cyan.tmuxtheme"
+source-file "/Users/nankaipan/.tmux-themepack/powerline/block/cyan.tmuxtheme"
 
-#set inactive/active window styles
-# set -g window-style 'bg=colour240'
-# set -g window-active-style 'bg=black'
-
-set-option -g status-right ""
-
-run-shell /Users/npan/.tmux/plugins/tmux-resurrect/resurrect.tmux
+set -g status-right '#{prefix_highlight}'
