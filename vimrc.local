@@ -15,6 +15,7 @@ set ignorecase
 set smartcase
 set guifont=Monaco:h16
 set hlsearch
+set clipboard=unnamed
 set nofixendofline
 
 " Eazy access to the start of the line
@@ -64,12 +65,12 @@ let g:airline_theme='gruvbox'
 autocmd! BufWinLeave * let b:winview = winsaveview()
 autocmd! BufWinEnter * if exists('b:winview') | call winrestview(b:winview) | unlet b:winview
 
-" Jump to last cursor position unless it's invalid or in an event handler
-au BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
-au BufEnter * silent! normal! g`"
+" " Jump to last cursor position unless it's invalid or in an event handler
+" au BufReadPost *
+"     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+"     \   exe "normal g`\"" |
+"     \ endif
+" au BufEnter * silent! normal! g`"
 
 " for .hql files
 au BufNewFile,BufRead *.hql set filetype=hive expandtab
@@ -119,3 +120,9 @@ let g:ale_linters_explicit = 1
 
 " Disable auto format for golang on save
 let g:go_fmt_autosave = 1
+
+let test#strategy = "tslime"
+
+" tslime settings
+let g:tslime_always_current_session = 1
+let g:tslime_always_current_window = 1
