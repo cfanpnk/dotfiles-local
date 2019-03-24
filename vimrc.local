@@ -47,6 +47,9 @@ map <leader>vi :tabe ~/.vimrc<cr>
 map <leader>gr "*gr
 map <leader>n :NERDTreeToggle<CR>
 map <leader>gd <C-]>
+map <leader>gt :bnext<CR>
+map <leader>gT :bprev<CR>
+map <leader>w :bdelete<CR>
 
 " Command aliases for typoed commands (accidentally holding shift too long)
 command! Q q
