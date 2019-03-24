@@ -139,5 +139,4 @@ chunkc tiling::rule --owner Contacts --state float &
 chunkc tiling::rule --owner Spotify --state float &
 chunkc tiling::rule --owner \"App Store\" --state float &
 chunkc tiling::rule --owner YoudaoDict --state float &
-chunkc tiling::rule --owner Bear --state float &
 
