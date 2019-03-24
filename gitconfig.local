@@ -4,6 +4,9 @@
   sla = log --oneline --decorate --graph --all
   unstage = reset
   uncommit = reset --soft HEAD^
+  browse = !hub browse
+  compare = !hub compare
+  issues = !hub browse --issues
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [user]
